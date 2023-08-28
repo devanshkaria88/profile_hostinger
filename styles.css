@@ -1,0 +1,692 @@
+/* 
+================================================================================
+                                  Globals
+================================================================================
+*/
+
+body {
+  text-align: center;
+  background-color: #131313;
+  background-image: url("../images/general/background.png");
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: white;
+}
+
+p {
+  color: #fff;
+}
+
+.cursor-follower {
+  background: #D7EA6A;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+}
+
+.navbar-solid {
+  background: rgba(29, 29, 29, 0.45);
+  border-bottom: 2px solid rgba(29, 29, 29, 0.45);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+.navbar {
+  padding: 15px 10%;
+  margin: 0%;
+}
+
+/* .navbar-brand {} */
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 19px;
+  color: white;
+}
+
+.about-us {
+  height: 100vh;
+  /* background-color: #000; */
+  padding-top: 20vh;
+  padding-bottom: 10vh;
+  display: grid;
+  gap: 5vh;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+}
+
+
+
+/* 
+================================================================================
+                                  HOME PAGE 
+================================================================================
+*/
+
+
+/* 
+              Header 
+*/
+
+.home-header {
+  padding-left: 10vw;
+  padding-right: 10vw;
+  padding-top: 15vh;
+
+  height: 100vh;
+}
+
+.home-mouse-icon {
+  position: absolute;
+  bottom: 2vh;
+}
+
+.home-header-cta {
+  display: flex;
+  margin-top: 10vh;
+  text-align: right;
+  justify-content: center;
+  align-content: flex-end;
+  align-items: flex-end;
+  /* justify-items: right; */
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.home-header-sub-heading {
+  width: 30vw;
+}
+
+.home-header-cta-button {
+  margin-top: 15px;
+  background-color: #D7EA6A;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border: none;
+  display: flex;
+  padding: 5px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 15px;
+}
+
+.home-header-cta-button-arrow {
+  background-color: #1B1B1B;
+  border-radius: 100%;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15px;
+  align-content: center;
+  justify-items: center;
+  height: 90%;
+}
+
+.home-heading {
+  color: white;
+  line-height: 1.5;
+  text-align: left;
+  font-size: 6rem;
+  font-family: 'PP Gosha Sans Bold';
+  font-weight: normal;
+  width: 60vw;
+}
+
+/* 
+              Our Services
+*/
+
+
+.home-our-services {
+  padding: 10vh 10vw;
+}
+
+.home-section-heading {
+  color: white;
+  line-height: 1.5;
+  text-align: left;
+  font-size: 3.5rem;
+  font-family: 'PP Gosha Sans Bold';
+
+  font-weight: normal;
+  width: 60vw;
+  margin-bottom: 10vh;
+}
+
+.services-row {
+  display: flex;
+  row-gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services-card {
+  background-color: #292929;
+  transition: all 200ms ease-in;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 50px;
+  padding-right: 40px;
+  text-align: start;
+  border: 2px solid transparent;
+}
+
+.services-card:hover {
+  border: 2px solid #D7EA6A;
+}
+
+.services-card-number {
+  color: #D7EA6A;
+  font-family: 'PP Gosha Sans Regular';
+  font-weight: 300;
+}
+
+
+.services-card-title {
+  font-family: 'PP Gosha Sans Regular';
+  font-weight: lighter;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+}
+
+.services-card-icons-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+}
+
+.services-card-icon {
+  height: 45px;
+  width: 45px;
+  margin: 0px 10px;
+}
+
+/* 
+              Solutions
+*/
+
+
+.home-solutions {
+  padding: 10vh 10vw;
+}
+
+.home-solutions-grid {
+  display: grid;
+  align-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: repeat(4, auto);
+}
+
+.home-solutions-grid-card {
+  padding: 20px 20px;
+  border: 2px solid #D7EA6A;
+  color: white;
+  margin: 10px;
+  width: 15vw;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  display: flex;
+  height: 10vh;
+  background-color: #292929;
+  font-family: 'PP Gosha Sans Regular';
+  transition: all 200ms ease-in;
+}
+
+.home-solutions-grid-card:hover {
+  border: 2px solid transparent;
+  background: #D7EA6A;
+
+}
+
+/* 
+================================================================================
+                                  About Us PAGE 
+================================================================================
+*/
+
+/* About Us Section */
+
+.penstroke {
+  width: 70vw;
+}
+
+.about-us-description {
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Satoshi';
+  font-weight: 400;
+  width: 60vw;
+}
+
+.about-us-heading {
+  color: white;
+  line-height: 1.0;
+  font-size: 6rem;
+  font-family: 'PP Gosha Sans Bold';
+  font-weight: normal;
+  width: 60vw;
+}
+
+.star-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+
+  justify-content: flex-start;
+}
+
+.custom-navbar {
+  /* background: transparent; */
+  transition: background 300ms ease 0s;
+}
+
+.star-title {
+  margin-left: -30.0px;
+  margin-bottom: -1.0px;
+  font-size: 25.0px;
+}
+
+/* What makes us different section */
+
+.what-makes-us-different {
+  padding: 5% 10%;
+  background-color: #D7EA6A;
+}
+
+.differences {
+  display: grid;
+  grid-template-columns: repeat(3, 20vw);
+  margin-top: 5%;
+  justify-content: space-between;
+}
+
+
+.difference {
+  display: block;
+  max-width: 27vw;
+  margin: 5%;
+}
+
+
+.accent-headers {
+
+  font-family: 'PP Gosha Sans Regular';
+  color: #000;
+  text-align: center;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 72px;
+  /* 124.138% */
+  letter-spacing: 1.16px;
+}
+
+.difference-titles {
+  color: black;
+  font-family: 'PP Gosha Sans Regular';
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.difference-descriptions {
+  color: black;
+  font-family: 'Satoshi';
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.intro {
+  background-image: url("images/general/background.png");
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/* Containers */
+
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* Sections */
+
+.colored-section {
+  background-color: #1B2430;
+  color: #fff;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+
+
+
+/* Buttons */
+
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+
+
+/* Title Section */
+
+#title {
+  background-color: #1B2430;
+  color: #fff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 0%;
+}
+
+
+.title-text {
+  display: flex;
+  align-items: center;
+}
+
+/* Title Image */
+
+.title-image {
+  width: 80%;
+  -webkit-filter: grayscale(30%);
+  filter: grayscale(30%);
+  float: right;
+  transition: all 200ms ease-in;
+}
+
+.title-image:hover {
+  width: 80%;
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  float: right;
+  transform: scale(1.05);
+}
+
+.tech-title-image-row {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+.tools-i-work-on {
+  display: grid;
+  grid-template-columns: repeat(6, 100px);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+
+.tech-title-image {
+  width: 30px;
+}
+
+
+/* About me section */
+
+/*Timeline*/
+
+.timeline,
+.timeline-node {
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* padding: 0 1rem; */
+  /* background: linear-gradient(45deg, #209cff, #68e0cf); */
+  /* margin-top: -2rem; */
+  padding-bottom: 7%;
+}
+
+
+.exp-position {
+  color: #1B2430;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.exp-employer {
+  color: #496283;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 16px;
+}
+
+
+.wrapper {
+  background: #eaf6ff;
+  padding: 2rem;
+  text-align: start;
+  border-radius: 15px;
+}
+
+/* h1 {
+  font-size: 1.1rem;
+  font-family: sans-serif;
+} */
+
+.sessions {
+  margin-top: 2rem;
+  border-radius: 12px;
+  position: relative;
+}
+
+.timeline-node {
+  padding-bottom: 1.5rem;
+  border-left: 1px solid #abaaed;
+  position: relative;
+  padding-left: 30px;
+  margin-left: 30px;
+}
+
+.timeline-node:last-child {
+  border: 0px;
+  padding-bottom: 0;
+}
+
+.timeline-node:before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background: white;
+  border: 1px solid #4e5ed3;
+  box-shadow: 3px 3px 0px #bab5f8;
+  box-shadow: 3px 3px 0px #bab5f8;
+  border-radius: 50%;
+  position: absolute;
+  left: -10px;
+  top: 0px;
+}
+
+.time {
+  color: #2a2839;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 601px) {
+  .time {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .time {
+    margin-bottom: 0.3rem;
+    font-size: 0.85rem;
+  }
+}
+
+p {
+  color: #4f4f4f;
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin-top: 0.4rem;
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* Features Section */
+
+#features {
+  position: relative;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+}
+
+.feature-box {
+  padding: 4.5%;
+}
+
+.icon {
+  color: #496283;
+  margin-bottom: 1rem;
+}
+
+.icon:hover {
+  color: #1B2430;
+}
+
+/* Testimonial Section */
+
+#testimonials {
+  background-color: #496283;
+}
+
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+
+
+#press {
+  background-color: #496283;
+  padding-bottom: 3%;
+}
+
+.press-logo {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* Pricing Section */
+
+#pricing {
+  padding: 100px;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+.pricing-column {
+  padding: 3% 2%;
+}
+
+/* CTA Section */
+
+
+/* Footer Section */
+
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+@media (max-width: 1028px) {
+
+  #title {
+    text-align: center;
+  }
+
+  .title-text {
+    display: block;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .tech-title-image-row {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+  }
+
+  .tech-title-image {
+    width: 30px;
+  }
+
+
+  .tools-i-work-on {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+  }
+
+}
